@@ -7,14 +7,15 @@
 	<link rel="stylesheet" href="css/bootstrap-theme.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="logic/jquery_3.2.1.js"></script>
+	<script type="text/javascript" src="logic/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="jumbotron" id="head">
-		<h1>This is were the Header goes</h1>	
+		<h1>The Dunn's Budget</h1>	
 	</div>
 	<div class="row" id="body">
 		<div class="col-md-4" id="left">
-			<p>This is where the bills go</p>
+			<h2>Monthly Bills</h2>
 			<table>
 				<tr>
 					<th>Name</th>
@@ -29,23 +30,40 @@
 					<td><input type="checkbox" name="payed"></td>
 				</tr>
 			</table>
-			<button id="test">test</button>
+			<!-- <button id="test">test</button> -->
 		</div>
 		<div class="col-md-4" id="middle">
-			<p>this is were the necesities go</p>
+			<h2>Expenditures</h2>
+				<table>
+					<tr>
+						<th>Type</th>
+						<th>Amount</th>
+					</tr>
+					<tr>
+						<td>Fuel</td>
+						<td>$45.25</td>
+					</tr>
+				</table>
 				<div class="dropdown">
-					<button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false" id="dropdown">
+					<button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown"aria-haspopup="true" aria-expanded="true" id="dropdown">
 				    Type of Expense <span class="caret"></span>
 			  	</button>
-				  <ul class="dropdown-menu">
-				    <li>Fuel</li>
-				    <li>Groceries</li>
-				  </ul>
+				  <ul class="dropdown-menu" aria-labelledby="dropdown">
+				    <li><a href="#">Fuel</a></li>
+				    <li><a href="#">Groceries</a></li>
+				    <li><a href="#">Resturant</a></li>
+				    <li><a href="#">Animals Needs</a></li>
+				    <li><a href="#">Medical</a></li>
+				  </ul>			
+					<div class="input-group">
+					  <span class="input-group-addon">$</span>
+					  <input type="text" class="form-control" aria-label="Amount">
+					</div>
 				</div>
 		</div>
 
 		<div class="col-md-4" id="right">
-			<p>This is where the pay goes</p>
+			<h2>Pay</h2>
 		</div>
 
 	</div>
