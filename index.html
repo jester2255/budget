@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="logic/jquery_3.2.1.js"></script>
 </head>
 <body>
 	<div class="jumbotron" id="head">
@@ -21,20 +22,33 @@
 					<th>Amount</th>
 					<th>Payed</th>
 				</tr>
-				<tr>
+				<tr class="data"> <!-- this is just for setup -->
 					<td>Car</td>
 					<td>06/15/2018</td>
 					<td>$555.00</td>
 					<td><input type="checkbox" name="payed"></td>
 				</tr>
 			</table>
+			<button id="test">test</button>
 		</div>
 		<div class="col-md-4" id="middle">
 			<p>this is were the necesities go</p>
+				<div class="dropdown">
+					<button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false" id="dropdown">
+				    Type of Expense <span class="caret"></span>
+			  	</button>
+				  <ul class="dropdown-menu">
+				    <li>Fuel</li>
+				    <li>Groceries</li>
+				  </ul>
+				</div>
 		</div>
+
 		<div class="col-md-4" id="right">
 			<p>This is where the pay goes</p>
-		</div>		
+		</div>
+
 	</div>
+	<script type="text/javascript" src="logic/buget.js"></script>
 </body>
 </html>

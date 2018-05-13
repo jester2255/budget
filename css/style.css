@@ -22,10 +22,9 @@ body{
 	border-color: red;
 }
 #left{
-	text-align: center;
-	table-layout: center;
 	margin-top: 10px
 	margin-bottom: 10px;
+	text-align: center;
 	border-style: solid;
 	border-width: 1px;
 	border-color: green;
@@ -38,13 +37,17 @@ body{
 	border-color: green;
 }
 #right{
-	margin-top: 10px
-	margin-bottom 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: yellow;
 }
+
 th{
+	font-weight: bold;
+	table-layout: fixed;
+	width: 200px;
 	text-align: center;
 	border-style: solid;
 	border-width: 1px;
@@ -55,4 +58,7 @@ td{
 	border-style: solid;
 	border-width: 1px;
 	border-color: black
+}
+#data{
+	margin-bottom: 100px;
 }
